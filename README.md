@@ -1,16 +1,30 @@
 # Url shortener
 
 A script to help get shorter links for a provided url, and to calculate number of clicks on a link.
+## Environment
 
-### main.py
+### Requirements
+Python3 should be already installed. Requires libraries:
+```
+request
+```
+```
+python-dotenv
+```
+Both can be installed by running
+```
+pip install -r requirements.txt
+```
 
-The main script.
+### Environment variables
+- SECRET_KEY
 
-Necessary data: user's API key (Obtained from the Bitly website); the link to a website.
+1. Put `.env` file near `main.py`.
+2. `.env` contains text data without quotes.
 
-On launch: Checks whether the provided link is shortened (here called 'Bitlink') or not.
+## Run
 
-To launch: While in the folder with the script, write in the console:
+While in the folder with the script, write in the console:
 ```
 python3 main.py {URL}
 ```
@@ -28,6 +42,16 @@ If not, it obtains and prints a shortened link.
 
 If the provided link is a Bitlink, the script prints number of clicks on the link over the last 30 days.
 ![img_2.png](img_2.png)
+
+## Code description
+
+### main.py
+
+The main script.
+
+Necessary data: user's API key (Obtained from the Bitly website); the link to a website.
+
+On launch: Checks whether the provided link is shortened (here called 'Bitlink') or not.
 
 ##### is_bitlink
 
