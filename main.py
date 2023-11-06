@@ -76,9 +76,7 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument('url', help='URL input')
-    args = parser.parse_args()
-
-    url = args.url
+    url = parser.parse_args().url
 
     try:
         if is_bitlink(bitly_token, url):
