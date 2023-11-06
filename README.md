@@ -38,10 +38,12 @@ python3 main.py https://bit.ly/3PRF6SI
 The script checks whether the link provided is shortened or not.
 
 If not, it obtains and prints a shortened link.
+
 ![image](https://github.com/DeusProtivogas/BitLink/assets/28997966/b05d76fb-c107-47b7-becf-6fee85939977)
 
 
 If the provided link is a Bitlink, the script prints number of clicks on the link over the last 30 days.
+
 ![image](https://github.com/DeusProtivogas/BitLink/assets/28997966/8af07bfd-f453-4865-b7bc-4d5312d54228)
 
 
