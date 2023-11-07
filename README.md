@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ```
 
 ### Environment variables
-- SECRET_KEY
+- bitly_token
 
 1. Put `.env` file near `main.py`.
 2. `.env` contains text data without quotes.
